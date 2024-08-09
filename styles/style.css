@@ -1,0 +1,130 @@
+/* 
+1. posicionanmiento
+2. modelo de caja
+3. tipografia
+4. temas visuales
+5. otros
+/*/
+
+:root {
+ /*colores*/ 
+ --shiping: #513316;
+ --cardo: #736342;
+ --marino: #1F2370;
+ --claro:#FFF2AA;
+ --gris: #F4F4F4;
+ --imagen-gris: #D9D9D9;
+ --Labels-Primary: #000;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "Kanit", sans-serif;
+    
+    
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+header nav {
+    display: flex;
+    justify-content:center ;
+    list-style: none
+}
+
+header nav .menu{
+    margin: 0;
+    padding: 0;
+    list-style-position: inside;
+    width: 382px;
+    height: 30px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .menu .new-in{
+    
+    width: 66px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--Labels-Primary, #000);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Kanit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px; /* 106.25% */
+    list-style: none;
+} 
+header nav .menu .camisetas{
+    width: 90px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--Labels-Primary, #000);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Kanit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px; /* 106.25% */
+} 
+header nav .menu .sudaderas{
+    width: 90px;
+    height: 24px;
+    flex-shrink: 0;
+    color: var(--Labels-Primary, #000);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Kanit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px; /* 106.25% */
+}   
+header nav .menu .pantalones{
+    width: 102px;
+    height: 23px;
+    flex-shrink: 0;
+    color: var(--Labels-Primary, #000);
+    text-align: center;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Kanit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 17px; /* 106.25% */
+}
+
+nav .menu a{
+    margin-right: 8px;
+    margin-left: 12;
+    color: black;
+    font-style: none;
+    
+}
+
+header .image-1{
+    background-image: image-set("/javascript/CARDADO/cardado1/IMG/pexels-fotios-photos-25306342.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 414px;
+    height: 549px;
+    flex-shrink: 0;
+}
+
