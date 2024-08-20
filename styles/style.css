@@ -36,14 +36,120 @@ a{
     text-decoration: none;
     cursor: pointer;
 }
-
+header{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    min-width: 670px;
+    
+    
+}
 header nav {
     display: flex;
-    justify-content:center ;
+    position: relative;
+    width: 100%;
+    min-width: 288px;
+    max-width: 9000px;
+    height: 27px;
+    margin-top: 2%;
+    display: flex;
+    justify-content:space-between ;
     list-style: none
+    
+}
+header nav .navigation{
+    width: 98%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 80px;
+    display: flex;
+    padding: 18px 30px;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid rgba(85, 53, 32, 0.6);
+    position: relative;
+    flex-direction: column;
+    width: 100%;
+    
 }
 
-header nav .menu{
+header nav  .config{
+    padding-left: 30px;
+    width: 50px;
+    height: 25px;
+    justify-content: left;
+    
+}
+header nav  .config .header-config{
+    
+    border: 1px solid #dfe1e5;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    background-color: #ffffff00;
+    color: #ffffff;
+    border: none;
+}
+header nav  .container-logo {
+    width: 25 40%;
+    display: flex;
+    position: relative;
+    
+}
+header nav  .container-logo .logo{
+    background-image: image-set("/javascript/CARDADO/cardado1/IMG/CARDADO.png");
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    margin-top: 0px;
+    margin-top: 0px;
+    align-self: center;
+    
+}
+header nav  .container-logo div{
+    align-self: center;
+    width: 140px;
+    height: 0px;
+    margin: 0px 0px 0 0px;
+    padding: 0px 0px 0px 0px;
+}
+header nav  .container-logo p{
+    height: 27px;
+    width: 150px;
+    color: var(--Labels-Primary, #000);
+    align-self: center;
+    justify-content: flex-end;
+    font-family: Kanit;
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 0px 0px 0px 0px;
+    
+
+}
+header .shop{
+    
+    justify-content: flex-end;
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+header .shop .lupa{
+    margin-right: 40px;
+}
+header .nav-menu{
+    margin-top: 150px;
+    align-items: center;
+    margin: 10px;
+}
+
+ .menu{
     margin: 0;
     padding: 0;
     list-style-position: inside;
@@ -55,7 +161,7 @@ header nav .menu{
     align-items: center;
 }
 
-header nav .menu .new-in{
+ .menu .new-in{
     
     width: 66px;
     height: 24px;
@@ -67,10 +173,10 @@ header nav .menu .new-in{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 17px; /* 106.25% */
+    line-height: 17px; 
     list-style: none;
 } 
-header nav .menu .camisetas{
+.menu .camisetas{
     width: 90px;
     height: 24px;
     flex-shrink: 0;
@@ -81,9 +187,9 @@ header nav .menu .camisetas{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 17px; /* 106.25% */
+    line-height: 17px;  
 } 
-header nav .menu .sudaderas{
+.menu .sudaderas{
     width: 90px;
     height: 24px;
     flex-shrink: 0;
@@ -94,9 +200,9 @@ header nav .menu .sudaderas{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 17px; /* 106.25% */
+    line-height: 17px; 
 }   
-header nav .menu .pantalones{
+.menu .pantalones{
     width: 102px;
     height: 23px;
     flex-shrink: 0;
@@ -107,10 +213,10 @@ header nav .menu .pantalones{
     font-size: 16px;
     font-style: normal;
     font-weight: 300;
-    line-height: 17px; /* 106.25% */
+    line-height: 17px; 
 }
 
-nav .menu a{
+ .menu a{
     margin-right: 8px;
     margin-left: 12;
     color: black;
@@ -121,10 +227,10 @@ nav .menu a{
 header .image-1{
     background-image: image-set("/javascript/CARDADO/cardado1/IMG/pexels-fotios-photos-25306342.png");
     background-repeat: no-repeat;
+    align-self: center;
     background-position: center;
     background-size: contain;
     width: 414px;
     height: 549px;
     flex-shrink: 0;
 }
-
