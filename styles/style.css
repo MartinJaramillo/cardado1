@@ -94,15 +94,15 @@ header nav  .config .header-config{
     border: none;
 }
 header nav  .container-logo {
-    width: 25 40%;
+    
     display: flex;
     position: relative;
     
 }
 header nav  .container-logo .logo{
-    background-image: image-set("/javascript/CARDADO/cardado1/IMG/CARDADO.png");
-    width: 23px;
-    height: 23px;
+    background-image: image-set("");
+    width: 150px;
+    height: 27px;
     flex-shrink: 0;
     background-repeat: no-repeat;
     background-position: left;
@@ -136,9 +136,12 @@ header nav  .container-logo p{
 }
 header .shop{
     
-    justify-content: flex-end;
-    justify-self: flex-end;
+    
+    align-items: flex-end !important;
+    justify-content: flex-end !important;
+    flex-direction: column !important;
     padding-right: 30px;
+
 }
 header .shop .lupa{
     margin-right: 40px;
