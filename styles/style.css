@@ -43,7 +43,7 @@ header{
     justify-content: center;
     width: 100%;
     text-align: center;
-    min-width: 670px;
+    min-width: 60px;
     
     
 }
@@ -144,96 +144,160 @@ header .shop{
 
 }
 header .shop .lupa{
+    margin-top: 0;
     margin-right: 40px;
 }
-header .nav-menu{
-    margin-top: 150px;
-    align-items: center;
-    margin: 10px;
+
+
+.line{
+    width: 100%;
+    height: 3px;
+    flex-shrink: 0;
+    background: var(--Labels-Primary, #000);
+    box-sizing: border-box;
+    margin-top: 15px;
+    border-top: 15px;
+    
+    
+    
+}
+.card-product{
+    width: 187.122px;
+    height: 109px;
+    flex-shrink: 0;
+}
+.content-card-product{
+    width: 198px;
+    height: 255px;
+    flex-shrink: 0;
+    font-family: Kanit;
+    font-style: normal;
+    color: #3A2813;
+}
+.content-card-product h3 {
+    color: #AF2424;
+    font-family: Kanit;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.content-card-product p{
+    color: #9B8C8C;
+
+    font-family: Kanit;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
 
- .menu{
-    margin: 0;
-    padding: 0;
-    list-style-position: inside;
-    width: 382px;
-    height: 30px;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    align-items: center;
-}
-
+.menu{
+        margin: 0;
+        padding: 0;
+        list-style-position: inside;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+    }
+.nav-menu{
+        margin: 10px 0px 10px 0px;
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(4, minmax(40px, 400px))    ; 
+        grid-template-rows: repeat(1, auto) ;
+        place-content: center;
+        grid-gap: 5%;
+        grid-template-areas: 
+        'new-in camisetas sudaderas panta';
+    
+    }
+.nav-menu a{
+        color: var(--Labels-Primary, #000);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Kanit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px; 
+        list-style: none;
+        
+    }
  .menu .new-in{
-    
-    width: 66px;
-    height: 24px;
-    flex-shrink: 0;
-    color: var(--Labels-Primary, #000);
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Kanit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 17px; 
-    list-style: none;
-} 
+        
+        width: 66px;
+        height: 24px;
+        flex-shrink: 0;
+        color: var(--Labels-Primary, #000);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Kanit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px; 
+        list-style: none;
+    } 
 .menu .camisetas{
-    width: 90px;
-    height: 24px;
-    flex-shrink: 0;
-    color: var(--Labels-Primary, #000);
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Kanit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 17px;  
-} 
+        width: 90px;
+        height: 24px;
+        flex-shrink: 0;
+        color: var(--Labels-Primary, #000);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Kanit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px;  
+    } 
 .menu .sudaderas{
-    width: 90px;
-    height: 24px;
-    flex-shrink: 0;
-    color: var(--Labels-Primary, #000);
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Kanit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 17px; 
-}   
+        width: 90px;
+        height: 24px;
+        flex-shrink: 0;
+        color: var(--Labels-Primary, #000);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Kanit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px; 
+    }   
 .menu .pantalones{
-    width: 102px;
-    height: 23px;
-    flex-shrink: 0;
-    color: var(--Labels-Primary, #000);
-    text-align: center;
-    font-feature-settings: 'liga' off, 'clig' off;
-    font-family: Kanit;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 17px; 
-}
-
- .menu a{
-    margin-right: 8px;
-    margin-left: 12;
-    color: black;
-    font-style: none;
+        width: 102px;
+        height: 23px;
+        flex-shrink: 0;
+        color: var(--Labels-Primary, #000);
+        text-align: center;
+        font-feature-settings: 'liga' off, 'clig' off;
+        font-family: Kanit;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 17px; 
+    }
     
-}
-
+.menu a{
+        margin-right: 8px;
+        margin-left: 12;
+        color: black;
+        font-style: none;
+        
+    }
+    
 header .image-1{
-    background-image: image-set("/javascript/CARDADO/cardado1/IMG/pexels-fotios-photos-25306342.png");
-    background-repeat: no-repeat;
-    align-self: center;
-    background-position: center;
-    background-size: contain;
-    width: 414px;
-    height: 549px;
-    flex-shrink: 0;
-}
+        background-image: image-set("/cardado1/IMG/pexels-fotios-photos-25306342.png");
+        background-repeat: no-repeat;
+        align-self: center;
+        background-position: center;
+        background-size: contain;
+        width: 414px;
+        height: 549px;
+        flex-shrink: 0;
+    }
+    
