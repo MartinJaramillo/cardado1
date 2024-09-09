@@ -161,6 +161,9 @@ header .shop .lupa{
     
     
 }
+.container-products{
+    height: 310px;
+}
 .card-product{
     width: 187.122px;
     height: 109px;
@@ -207,7 +210,7 @@ header .shop .lupa{
         margin: 10px 0px 10px 0px;
         display: grid;
         width: 100%;
-        grid-template-columns: repeat(4, minmax(40px, 400px))    ; 
+        grid-template-columns: repeat(auto-fit,  minmax(100px, 1fr))    ; 
         grid-template-rows: repeat(1, auto) ;
         place-content: center;
         grid-gap: 5%;
@@ -290,7 +293,7 @@ header .shop .lupa{
         
     }
     
-header .image-1{
+.image-1{
         background-image: image-set("/cardado1/IMG/pexels-fotios-photos-25306342.png");
         background-repeat: no-repeat;
         align-self: center;
@@ -301,3 +304,44 @@ header .image-1{
         flex-shrink: 0;
     }
     
+.our-products{
+    /*display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 1fr;
+    gap: 15px;*/
+    display: flex   ;
+    height: 300px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: proximity;
+
+}
+.our-products img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scroll-snap-align: center;
+}
+
+.gallery-grid{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr ));
+        grid-auto-rows: 1fr;
+        justify-content: center;
+}
+.gallery-grid img{
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-style: none;
+    vertical-align: top;
+    
+}
+@media screen and (min-width:768px) {
+    .our-products img{
+        height: 400px;
+    }
+}
